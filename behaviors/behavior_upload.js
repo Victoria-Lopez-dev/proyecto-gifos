@@ -310,8 +310,8 @@ function idUpload(id){
         section.appendChild(gifCreado)
         localStorage.setItem(`Gif${response.data.id}`,`${gifUrl}`)
 
-        BotonCopiar.addEventListener("click",()=>{
-            navigator.clipboard.writeText(response.data.images.fixed_height.url)
+        BotonCopiar.addEventListener("click",async()=>{
+           await  navigator.clipboard.writeText(response.data.images.fixed_height.url)
             alert("se copio el link en el clipboard")
         })
 
