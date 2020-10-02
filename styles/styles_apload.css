@@ -867,6 +867,8 @@
 .theme_night #instrucciones {
   list-style-type: none;
   padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 6px;
 }
 
 .theme_night #instrucciones li {
