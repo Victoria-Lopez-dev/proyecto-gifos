@@ -1,0 +1,475 @@
+//styles propios del theme 2 que no comparte con theme 1//
+
+.theme_night{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    border-right: 140px;
+    color:#110038; 
+    background-color:#110038;
+
+
+li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding-left: 16px;
+    background-color: #CCCCCC;
+    border: 1px solid #808080 ;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    padding-left: 16px;
+    color: #110038;
+}
+
+label{
+    color:#FFFFFF; 
+}
+
+a{
+    text-decoration: none;
+    color:#FFFFFF; 
+}
+
+#bienvenida{
+    color:#FFFFFF; 
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    p{
+        color:#FFFFFF;
+        font-size: 12px; 
+    }
+}
+
+h2{
+    font-size: 16px;
+}
+
+.titulos{
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: left;
+    width: 100%;
+    height: 32px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    margin-top: 64px;
+}
+//logo + opciones de temas,misgifs y crear//
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 19px;
+    padding-right: 144px;
+    padding-left: 90px;
+}
+
+#flecha_volver{
+    width: 24px;
+    height: 24px;
+}
+#logo{
+    height: 64px;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+#contenedor_botones{
+    display:flex;
+    flex-direction: row;
+    color:#FFFFFF; 
+}
+
+.boton{
+    margin-right: 16px ;
+    background-color: #EE3EFE;
+    border: 1px solid #110038;
+    border-spacing: 1px;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    width:140px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boton:hover{
+    background-color: #CE36DB;
+    border: 1px dotted #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+
+   
+}
+.boton:active{
+    background: #CE36DB;
+    border: 1px dotted #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.contenedor_elegir_tema{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#boton_tema{
+    background-color: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;    
+    display: inline-block;
+    text-align: center;  
+    width: 150px;
+    height:27px; 
+    padding-top: 9px; 
+}
+
+.contenedor_elegir_tema:hover{
+
+    #boton_tema{
+        background-color: #CE36DB;
+        border: 1px dotted #110038;
+        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;  
+    }
+    #flecha{
+        background-color: #CE36DB;
+        border:1px dotted #110038;
+        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;  
+    }
+
+}
+
+
+#flecha{
+    background-color: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;  
+    width:36px;
+    height: 27px;
+    padding-top: 9px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+
+
+
+#boton_tema:active{
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+
+}
+
+
+.tema {
+    list-style-type: none;
+    display: none;
+    background-color: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    width:170px;
+    padding: 10px;
+    margin:0px;
+}
+
+#tema_item_day:active{
+
+    background-color: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    
+}
+
+#tema_item_night:active{
+    background-color:#2E32FB ;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow:  inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    color:#FFFFFF; 
+}
+
+#desplegable {
+    display: none;
+}
+
+#desplegable:checked + .tema {
+    display: block;
+
+}
+
+#mis_gifos{
+    margin-left:16px;
+    background-color:#110038;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    width: 95px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+}
+.M{
+    text-decoration:underline;
+}
+
+#mis_gifos:hover{
+    border: 1px dotted #FFFFFF;
+    outline-style: none;
+    
+}
+
+#mis_gifos:active{
+    color: #b4b4b4b2;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+//Buscador//
+
+
+nav{
+    padding-left: 100px;
+    padding-right: 144px;
+    display: flex;
+    flex-direction: column;
+    
+    label{
+        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+        color:#FFFFFF;
+        display: block;
+        font-size: 14px;
+
+        
+    }
+
+    div{
+        background-color:#B4B4B4 ;
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+        padding: 12px;
+        
+
+        input{
+            display: inline-block;
+            width: 88%;
+            height: 48px;
+            border: 1px solid #979797;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+
+        }
+    }
+}
+
+#boton_buscador{
+    font-size: 16px;
+    color:  #808080;
+    letter-spacing: 0;
+    line-height: 18px;
+    width: 84px;
+    height:18px;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px;
+    display: inline-block;
+}
+
+
+#boton_buscador_input{
+    background-color: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 9px;
+    width: 84px;
+
+}
+
+#boton_buscador_input:active{
+    background-color: #CE36DB;
+    border: 1px dotted #110038;
+    border-spacing: 2px;
+    outline: 1px solid;
+    outline-offset: 1px;
+}
+
+.despliegue_busqueda{
+    width: 88%;
+    padding: 0px;
+    line-height: 22px;
+    display: none;
+}
+
+#opcion_sugerido{
+    border: 1px solid #110038;
+    padding-left:16px ;
+}
+
+#opcion_similar{
+    background-color: #cecccc;
+    border: 1px solid ;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding-left:16px ;
+}
+
+#opcion_otroMas{
+    background-color:#CCCCCC;
+    border: 1px solid ;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding-left:16px ;
+
+}
+
+//resultado busqueda cuadros//
+
+#cuadros_busqueda{
+    padding-right: 144px;
+    padding-left: 100px;
+    display: none;
+    flex-direction: row;
+    justify-content:left;
+
+    
+}
+.opcion_cuadro_busqueda{
+
+    height: 18px;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    margin-right: 8px;
+    padding: 8px;
+
+}
+
+//Gifs sugeridos//
+
+aside{
+    padding-right: 144px;
+    padding-left: 100px;
+}
+
+#gifs_sugeridos{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+   
+}
+
+.marco_gifs{
+    width: 288px;
+    height: 280px; 
+    margin: 12px;
+}
+
+.bar_gif_sugerido{
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    color:#FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    font-weight: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#boton_x{
+    padding-right: 8px;
+}
+
+.contenedor_gif_sugerencia{
+    width: 100%;
+    height: 256px;
+    background-color: grey;
+    position: relative;
+}
+
+.gif_hardcode{
+    width: 100%;
+    height: 100%;
+}
+
+.ver_mas{
+    width: 81px;
+    height: 34px;
+    background-color:#2E32FB;
+    position: absolute;
+    bottom: 15px;
+    left: 7px;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_gif_sugerencia:hover{
+    border: 1px dotted #110038;
+    outline: 1px solid #110038;
+    outline-offset: 1px;
+
+    .ver_mas{
+    background-color: #2629CC;
+    border: 1px dotted #110038;
+    outline: 1px solid #110038;
+    outline-offset: 1px;
+    box-shadow:  inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    }
+}
+// Gifs buscados//
+
+section{
+    padding-right: 144px;
+    padding-left: 100px;
+}
+
+#gifs{
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+#gifsFijos{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contenedor_gif_buscados{
+    width: 288px;
+    height: 298px;
+    margin-top: 16px;
+    margin-right: 14px;
+}
+
+.contenedor_gif_buscados:hover{
+border: 1px dotted #110038;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+}

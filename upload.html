@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles_apload.css">
+    <link rel="stylesheet" type="text/javascript"  href="behaviors/behavior_upload.js">
+    
+   
+
+    <title>Upload</title>
+
+</head>
+<body class="theme_day">
+
+    <header class= "barra">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+
+    <nav>    
+        <div id="contenedor_derecho">
+            <a href="index.html"><img id="flecha_volver" src="assets/arrow.svg" alt="flecha volver"></a>
+            <img id="logo" src="assets/gifOF_logo.png" alt="logo">
+        </div>
+        <div id="contenedor_botones">
+
+            <div class ="boton" id="crear"><a>Crear Guifos</a></div>
+
+            <div >  
+                <div class="contenedor_elegir">      
+                    <div class= "boton_elegir"><a>Elegir tema</a></div> 
+                    
+                    <div id="flecha">
+                        <label for="desplegable"><img id="flechita" src="assets/dropdown.svg" alt="flecha despliegue de tema"></label>
+                    </div>
+                </div>   
+                
+                <input type="checkbox" name="desplegable" id="desplegable">
+                
+                <ul class="tema">
+                    
+                    <li id="tema_item_day">Sailor Day</li>
+
+                    <li id="tema_item_night"><span class="M">S</span>ailor Night</li>
+                 </ul>
+
+            </div> 
+            
+            <div id="mis_gifos"><a><span class="M">M</span>is Guifos</a></div>
+
+       </div> 
+
+    </nav>  
+
+    <aside >
+        <div class= "barra"><p>Crear Guifos</p></div>
+
+        <div id="contenedor_crear">
+
+            <div id="contenedor_window">
+
+                <img src="assets/window_img.png" id="imagen_window" alt="imagen window">
+                <p id="window">Aquí podrás crear tus propios guifos</p>
+
+            </div>
+
+            <div id="opciones">
+
+                <p id="titulo_instrucciones">Crear tu <span class="guifo">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+               <ul id="instrucciones">
+                   <li><b>1) </b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li> 
+                    <li><b>2) </b> Capturar tu momento guifo</li>
+                    <li><b>3) </b> Revisar el momento</li>
+                    <li><b>4) </b> Listo para subir y compartir!</li>
+               </ul>
+                <p>¿Quieres comenzar a crear tu <span class="guifo">guifo</span> ahora?</p>
+
+            </div>
+
+            <div id="contenedor_botones_crear">
+
+                <div id= "boton_cancelar"><a>Cancelar</a></div> 
+                <div id= "boton_comenzar"><a>Comenzar</a></div>
+
+             </div>
+
+        </div>
+
+    </aside>
+
+    <article>
+        <div class= "barra">
+            <p>Un Chequeo Antes de Empezar</p>
+            <img class="boton_x" src="assets/button_close.svg" alt="boton x">
+        </div>
+        
+        <div id="contenedor_video">
+            <video></video>
+    
+        </div>
+
+        <div id="subiendo_gifo">
+            <img src="assets/globe_img.png" alt="imagen globlo terraqueo">
+            <h3>Estamos subiendo tu guifo…</h3>
+            <div class= "barra_carga_gif subida">
+                <div class="carga"></div>
+            </div>
+            <p >Tiempo restante: <span id="años">38 años</span> algunos minutos</p>
+
+        </div>
+        
+        <div class="contenedor_capturar">      
+            <div class="camara_contenedor" >
+                <img id="camara" src="assets/camera.svg" alt="camara">
+            </div>
+            <div class= "boton_elegir" id="capturar">
+                <a>Capturar</a>
+            </div> 
+
+            <div class= "boton_elegir" id="subir_guifo">
+                <a>Subir Guifo</a>
+            </div> 
+
+        </div>
+
+        <div id= "boton_repetir">
+            <a>Repetir Captura</a>
+        </div>
+
+        <div class="contenedor_play_barra">
+            <div class = "play"><img src="assets/forward.svg" alt="play"></div>
+            <div class= "barra_carga_gif"><div class="reproduccion"></div></div>
+        </div>
+        <div id="reloj"></div>
+
+    </article>
+
+    <div class="contenedor_subida_exitosa">
+        <div class= "barra">
+            <p>Guifo Subido Con Éxito</p>
+            <img class="boton_x" src="assets/button_close.svg" alt="boton x">
+        </div>
+        
+        <div id="imagen_subida"></div>
+
+        <div class="contenedor_botones_exitosa">
+
+            <h3>Guifo creado con éxito</h3>
+
+            <div class="boton_subida_exitosa" id="Copiar">
+                <a>Copiar Enlace Guifo</a>
+            </div>
+
+            <div class="boton_subida_exitosa" id="Descargar">
+                <a>Descargar Guifo</a>
+            </div>
+
+        </div>
+
+        <div id="boton_listo_subido">
+            <a>Listo</a>
+        </div>
+    </div>
+   
+
+    <div id="contenedor_titulo">
+
+        <div class= "titulo"><h2>Mis gifos</h2></div>
+
+    </div>
+
+    <div id="section"></div>    
+
+
+    <script src="behaviors/behavior_upload.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+   
+   
+</body>
+</html>
