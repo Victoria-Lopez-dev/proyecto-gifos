@@ -1,7 +1,7 @@
 //variables//
 
 const apiKey = "pxWpXgbcuD8t5LD6guqz2Xouj4UQuBjl";
-const apiBaseUrl = "http://api.giphy.com/v1/gifs/search?q=";
+const apiBaseUrl = "https://api.giphy.com/v1/gifs/search?q=";
 let logo = document.getElementById("logo")
 let barra = document.getElementsByClassName("barra")
 let flecha = document.getElementById("flechita")
@@ -268,7 +268,7 @@ function postRecord(form){
     console.log("se esta ejecutando la subida a GIPHY")
     document.getElementById("contenedor_video").setAttribute("style","display:none");
     document.getElementById("subiendo_gifo").setAttribute("style","display:flex"); 
-    fetch( 'http://upload.giphy.com/v1/gifs?api_key=' + apiKey ,{
+    fetch( 'https://upload.giphy.com/v1/gifs?api_key=' + apiKey ,{
         method:"POST",
         body: form
     }).then(response =>{
@@ -297,7 +297,7 @@ function postRecord(form){
 function idUpload(id){
     section.setAttribute("style","display:grid");
     document.getElementById("contenedor_titulo").setAttribute("style","display:block");
-    fetch(`http://api.giphy.com/v1/gifs/${id}?api_key=${apiKey}`)
+    fetch(`https://api.giphy.com/v1/gifs/${id}?api_key=${apiKey}`)
     .then(resp =>{
         return resp.json()
     })
