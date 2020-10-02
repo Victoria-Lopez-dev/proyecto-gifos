@@ -2,7 +2,7 @@
 //VARIABLES//
 
  const apiKey = "pxWpXgbcuD8t5LD6guqz2Xouj4UQuBjl";
- const apiBaseUrl= "http://api.giphy.com/v1/gifs/search?q=";
+ const apiBaseUrl= "https://api.giphy.com/v1/gifs/search?q=";
  let logo = document.getElementById("logo")
  let flechita = document.getElementById("flechita")
  let lupa =document.getElementById("lupa")
@@ -129,7 +129,7 @@ function InputDay() {
 //Fetch de busqueda en Giphy//
 
 function getSearchResults(search) {
-    const found = fetch('http://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey)
+    const found = fetch('https://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey)
         .then(response => {
             return response.json();
         })
